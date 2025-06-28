@@ -111,30 +111,34 @@ document.addEventListener('DOMContentLoaded', function() {
         observer.observe(skillsSection);
     }
 
-    // Contact form handling for Google Sheets integration
+    // Contact form handling for Google Sheets integration (JSON + CORS)
     const contactForm = document.getElementById('contactForm');
     if (contactForm) {
         contactForm.addEventListener('submit', function(e) {
             e.preventDefault();
-            
+
             const data = {
-                name: contactForm.name.value,
-                email: contactForm.email.value,
-                subject: contactForm.subject.value,
-                message: contactForm.message.value
+                name: this.name.value,
+                email: this.email.value,
+                subject: this.subject.value,
+                message: this.message.value
             };
 
-            fetch('https://script.google.com/macros/s/AKfycbzFj_W_4tYkVTjAasIflwgqmhvbZOv6_fPzVgmrQKpW90w0d3MCbuU8zIbvwM_6ZUsItA/exec', {
+            fetch('https://script.google.com/macros/s/AKfycbwKt26lOEPO0Ll-yxAF3XXpsOM8lewg3Y0feG--NhbOZbtmnvolkDryXURno9Jd8HRiyw/exec', {
                 method: 'POST',
                 body: JSON.stringify(data),
                 headers: {
                     'Content-Type': 'application/json'
                 }
             })
-            .then(response => response.text())
+            .then(response => response.json())
             .then(result => {
-                showNotification('Message sent successfully!');
-                contactForm.reset();
+                if (result.result === 'success') {
+                    showNotification('Message sent successfully!');
+                    this.reset();
+                } else {
+                    showNotification('There was an error sending your message.', 'error');
+                }
             })
             .catch(error => {
                 showNotification('There was an error sending your message.', 'error');

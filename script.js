@@ -111,7 +111,7 @@ document.addEventListener('DOMContentLoaded', function() {
         observer.observe(skillsSection);
     }
 
-    // Contact form handling for Google Sheets integration (FormData, no CORS preflight)
+    // Contact form handling for Google Sheets integration (FormData, plain text response for CORS)
     const contactForm = document.getElementById('contactForm');
     if (contactForm) {
         contactForm.addEventListener('submit', function(e) {
@@ -119,13 +119,13 @@ document.addEventListener('DOMContentLoaded', function() {
 
             const formData = new FormData(this);
 
-            fetch('https://script.google.com/macros/s/AKfycbzyRM9sbb4BjgMq0K5jdPpYuOyGjrex6lyqE8LBlsSO4Ye0l2E2daCDen7N-nHOkHbNuw/exec', {
+            fetch('https://script.google.com/macros/s/AKfycbwgan95GG-pf-eDn_um20BBaGcY9T-Ow7kJmAFMDNo5EDPPkWqaFUJY8HPGHHCVCGsWgA/exec', {
                 method: 'POST',
                 body: formData
             })
-            .then(response => response.json())
+            .then(response => response.text())
             .then(result => {
-                if (result.result === 'success') {
+                if (result.trim() === 'success') {
                     showNotification('Message sent successfully!');
                     this.reset();
                 } else {

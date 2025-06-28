@@ -95,15 +95,11 @@ portfolio/
 ## 📧 Contact
 
 - **Email**: mail.yrajeev@gmail.com
-- **Phone**: +91 9135661641
-- **Location**: Bihar, India
 
 ## 🔗 Social Links
 
 - [GitHub](https://github.com/y-rajeev)
 - [Instagram](https://www.instagram.com/y__rajeev)
-- [LinkedIn](https://linkedin.com/in/your-profile)
-- [Twitter](https://twitter.com/your-handle)
 
 ## 📄 License
 

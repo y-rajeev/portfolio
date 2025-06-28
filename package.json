@@ -17,14 +17,14 @@
     "css",
     "javascript"
   ],
-  "author": "Your Name",
+  "author": "Rajeev Yadav",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/yourusername/portfolio.git"
+    "url": "https://github.com/y-rajeev/portfolio.git"
   },
   "bugs": {
-    "url": "https://github.com/yourusername/portfolio/issues"
+    "url": "https://github.com/y-rajeev/portfolio/issues"
   },
-  "homepage": "https://yourusername.github.io/portfolio"
+  "homepage": "https://y-rajeev.github.io/portfolio"
 } 

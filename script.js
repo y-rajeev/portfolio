@@ -111,37 +111,35 @@ document.addEventListener('DOMContentLoaded', function() {
         observer.observe(skillsSection);
     }
 
-    // Contact form handling
+    // Contact form handling for Google Sheets integration
     const contactForm = document.getElementById('contactForm');
     if (contactForm) {
         contactForm.addEventListener('submit', function(e) {
             e.preventDefault();
             
-            // Get form data
-            const formData = new FormData(this);
-            const name = formData.get('name');
-            const email = formData.get('email');
-            const subject = formData.get('subject');
-            const message = formData.get('message');
+            const data = {
+                name: contactForm.name.value,
+                email: contactForm.email.value,
+                subject: contactForm.subject.value,
+                message: contactForm.message.value
+            };
 
-            // Simple validation
-            if (!name || !email || !subject || !message) {
-                showNotification('Please fill in all fields', 'error');
-                return;
-            }
-
-            if (!isValidEmail(email)) {
-                showNotification('Please enter a valid email address', 'error');
-                return;
-            }
-
-            // Simulate form submission
-            showNotification('Sending message...', 'info');
-            
-            setTimeout(() => {
-                showNotification('Message sent successfully! I\'ll get back to you soon.', 'success');
+            fetch('https://script.google.com/macros/s/AKfycbzFj_W_4tYkVTjAasIflwgqmhvbZOv6_fPzVgmrQKpW90w0d3MCbuU8zIbvwM_6ZUsItA/exec', {
+                method: 'POST',
+                body: JSON.stringify(data),
+                headers: {
+                    'Content-Type': 'application/json'
+                }
+            })
+            .then(response => response.text())
+            .then(result => {
+                showNotification('Message sent successfully!');
                 contactForm.reset();
-            }, 2000);
+            })
+            .catch(error => {
+                showNotification('There was an error sending your message.', 'error');
+                console.error(error);
+            });
         });
     }
 

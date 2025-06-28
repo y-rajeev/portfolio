@@ -111,30 +111,42 @@ document.addEventListener('DOMContentLoaded', function() {
         observer.observe(skillsSection);
     }
 
-    // Contact form handling for Google Sheets integration (FormData, plain text response for CORS)
+    // Contact form handling for Formspree integration
     const contactForm = document.getElementById('contactForm');
     if (contactForm) {
         contactForm.addEventListener('submit', function(e) {
             e.preventDefault();
 
-            const formData = new FormData(this);
+            // Show loading state
+            const submitBtn = this.querySelector('button[type="submit"]');
+            const originalText = submitBtn.textContent;
+            submitBtn.textContent = 'Sending...';
+            submitBtn.disabled = true;
 
-            fetch('https://script.google.com/macros/s/AKfycbzVM2lUyuozmpX7rQqq5_gDxRMwSdE4OWz-XKqCEVU3luVQC6u6AUnjfkJ4MN5MEIQI/exec', {
+            // Submit form to Formspree
+            fetch(this.action, {
                 method: 'POST',
-                body: formData
+                body: new FormData(this),
+                headers: {
+                    'Accept': 'application/json'
+                }
             })
-            .then(response => response.text())
-            .then(result => {
-                if (result.trim() === 'success') {
+            .then(response => {
+                if (response.ok) {
                     showNotification('Message sent successfully!');
                     this.reset();
                 } else {
-                    showNotification('There was an error sending your message.', 'error');
+                    throw new Error('Network response was not ok');
                 }
             })
             .catch(error => {
                 showNotification('There was an error sending your message.', 'error');
-                console.error(error);
+                console.error('Error:', error);
+            })
+            .finally(() => {
+                // Reset button state
+                submitBtn.textContent = originalText;
+                submitBtn.disabled = false;
             });
         });
     }

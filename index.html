@@ -193,15 +193,34 @@
             <div class="projects-grid">
                 <div class="project-card">
                     <div class="project-image">
-                        <i class="fas fa-shopping-cart"></i>
+                        <i class="fas fa-industry"></i>
                     </div>
                     <div class="project-content">
-                        <h3>E-Commerce Platform</h3>
-                        <p>A full-stack e-commerce solution with payment integration, user authentication, and admin dashboard.</p>
+                        <h3>QueryOS</h3>
+                        <p>A Flask-based reporting and operations dashboard designed to track and manage shipment, and production data across manufacturing units.</p>
                         <div class="project-tech">
-                            <span>React</span>
-                            <span>Node.js</span>
-                            <span>MongoDB</span>
+                            <span>Flask</span>
+                            <!-- <span>Python</span> -->
+                            <span>HTML</span>
+                            <span>Supabase</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="btn btn-small">Live Demo</a>
+                            <a href="https://github.com/y-rajeev/QueryOS.git" target="_blank" class="btn btn-small btn-outline">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <i class="fas fa-file-excel"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3>SalaryCalc</h3>
+                        <p>A Google Sheets-based payroll automation system that processes raw attendance data from a biometric punching machine and applies custom logic for salary calculations using App Script.</p>
+                        <div class="project-tech">
+                            <span>Google Sheets</span> 
+                            <span>Apps Script</span>
+                            <span>Automation</span>
                         </div>
                         <div class="project-links">
                             <a href="#" class="btn btn-small">Live Demo</a>
@@ -211,25 +230,7 @@
                 </div>
                 <div class="project-card">
                     <div class="project-image">
-                        <i class="fas fa-tasks"></i>
-                    </div>
-                    <div class="project-content">
-                        <h3>Task Management App</h3>
-                        <p>A collaborative task management application with real-time updates and team features.</p>
-                        <div class="project-tech">
-                            <span>Vue.js</span>
-                            <span>Express</span>
-                            <span>PostgreSQL</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="#" class="btn btn-small">Live Demo</a>
-                            <a href="#" class="btn btn-small btn-outline">GitHub</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="project-card">
-                    <div class="project-image">
-                        <i class="fas fa-chart-line"></i>
+                        <i class="fas fa-chart-bar"></i>
                     </div>
                     <div class="project-content">
                         <h3>Analytics Dashboard</h3>
@@ -247,7 +248,7 @@
                 </div>
                 <div class="project-card">
                     <div class="project-image">
-                        <i class="fas fa-mobile-alt"></i>
+                        <i class="fas fa-heartbeat"></i>
                     </div>
                     <div class="project-content">
                         <h3>Mobile App</h3>
@@ -350,7 +351,10 @@
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2024 Rajeev Yadav. All rights reserved.</p>
+                <p>&copy; <span id="year"></span> Rajeev Yadav. All rights reserved.</p>
+                <script>
+                    document.getElementById("year").textContent = new Date().getFullYear();
+                </script>
             </div>
         </div>
     </footer>

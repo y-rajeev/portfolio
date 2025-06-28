@@ -347,7 +347,7 @@ document.addEventListener('DOMContentLoaded', function() {
     themeToggle.className = 'theme-toggle';
     themeToggle.style.cssText = `
         position: fixed;
-        top: 20px;
+        bottom: 20px;
         right: 20px;
         background: #3498db;
         color: white;

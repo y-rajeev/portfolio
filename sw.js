@@ -1,14 +1,13 @@
 // Service Worker for Portfolio Website
 const CACHE_NAME = 'portfolio-v1.0.0';
 const urlsToCache = [
-  '/',
-  '/index.html',
-  '/styles.css',
-  '/script.js',
-  '/src/image.png',
-  '/src/icons8-portfolio-32.png',
-  'https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap',
-  'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css'
+  './',
+  './index.html',
+  './styles.css',
+  './script.js',
+  './src/image.png',
+  './src/icons8-portfolio-32.png'
+  // Removed external URLs to avoid CORS/cache errors
 ];
 
 // Install event - cache resources

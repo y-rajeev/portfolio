@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://y-rajeev.github.io/portfolio/sitemap.xml 

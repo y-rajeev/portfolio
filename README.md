@@ -185,7 +185,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 - **Email**: mail.yrajeev@gmail.com
 - **Phone**: +91 9135661641
-- **Location**: Bihar, India
+- **Location**: Madhubani, Bihar
 - **GitHub**: [y-rajeev](https://github.com/y-rajeev)
 - **Instagram**: [y__rajeev](https://www.instagram.com/y__rajeev)
 

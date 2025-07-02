@@ -57,7 +57,3 @@ We strongly encourage responsible disclosure and will credit all valid reporters
 
 ---
 
-## 📄 License
-
-This project is licensed under the MIT License.  
-Please refer to the [LICENSE](./LICENSE) file for details.

@@ -31,14 +31,6 @@ This portfolio has been optimized for maximum performance and user experience:
 - ✅ **Backdrop-filter**: Hardware-accelerated blur effects
 - ✅ **Optimized Selectors**: Efficient CSS selectors
 
-## 📊 Performance Metrics
-
-| Metric | Target | Status |
-|--------|--------|--------|
-| First Contentful Paint | < 1.8s | ✅ Optimized |
-| Largest Contentful Paint | < 2.5s | ✅ Optimized |
-| First Input Delay | < 100ms | ✅ Optimized |
-| Cumulative Layout Shift | < 0.1 | ✅ Optimized |
 
 ## 🚀 Features
 
@@ -52,122 +44,32 @@ This portfolio has been optimized for maximum performance and user experience:
 
 ## 🛠️ Technologies Used
 
-- **HTML5**: Semantic markup with accessibility features
-- **CSS3**: Modern CSS with Flexbox and Grid
-- **JavaScript (ES6+)**: Vanilla JS with performance optimizations
-- **Service Worker**: Offline caching and PWA features
-- **Google Fonts**: Optimized font loading
-- **Font Awesome**: Icon library with integrity checks
+HTML5, CSS3, JavaScript (ES6+), Service Worker, Google Fonts, Font Awesome
 
 ## 🚀 Getting Started
 
-### Prerequisites
-- Modern web browser with ES6+ support
-- Local development server (optional)
+1. Clone the repository: `git clone https://github.com/y-rajeev/portfolio.git`
+2. Open `index.html` in your browser or use a local server
 
-### Installation
+## 📱 Additional Features
 
-1. Clone the repository:
-```bash
-git clone https://github.com/y-rajeev/portfolio.git
-cd portfolio
-```
-
-2. Start local development server:
-```bash
-# Using Python
-python -m http.server 8000
-
-# Using Node.js
-npx serve .
-
-# Using PHP
-php -S localhost:8000
-```
-
-3. Open your browser and navigate to `http://localhost:8000`
-
-## 📱 Features
-
-### Responsive Design
-- Mobile-first approach
-- Optimized for all screen sizes
-- Touch-friendly navigation
-
-### Performance Features
-- **Service Worker**: Offline functionality
-- **PWA Support**: Installable on mobile devices
-- **Lazy Loading**: Images load as needed
-- **Caching**: Static assets cached for faster loading
-
-### User Experience
-- Smooth scroll navigation
-- Animated skill bars
-- Interactive project cards
-- Contact form with validation
-- Social media integration
+- **PWA Support**: Installable on mobile devices with offline functionality
+- **Smooth Animations**: Animated skill bars and interactive project cards
+- **Social Integration**: Connected social media profiles
 
 ## 🔧 Customization
 
-### Colors
-The color scheme can be customized by modifying CSS custom properties in `styles.css`:
+Update personal information, projects, skills, and contact details in `index.html`. Customize colors by modifying CSS variables in `styles.css`.
 
-```css
-:root {
-  --primary-color: #3498db;
-  --secondary-color: #f39c12;
-  --text-color: #2c3e50;
-  --background-color: #f8f9fa;
-}
-```
+## 📈 SEO & Security
 
-### Content
-- Update personal information in `index.html`
-- Modify project details in the projects section
-- Adjust skills and percentages in the skills section
-- Update contact information and social links
-
-## 📈 SEO Optimizations
-
-- Semantic HTML structure
-- Meta tags for social sharing
-- Open Graph and Twitter Card support
-- Sitemap.xml for search engines
-- Robots.txt for crawling instructions
-- Structured data markup
-
-## 🔒 Security Features
-
-- Content Security Policy headers
-- Subresource Integrity for external resources
-- HTTPS enforcement
-- XSS protection
-- CSRF protection for forms
-
-## 📊 Analytics
-
-Google Analytics integration for tracking:
-- Page views and user behavior
-- Performance metrics
-- User demographics
-- Traffic sources
+- Semantic HTML structure with meta tags and social sharing
+- Sitemap.xml and robots.txt for search engines
+- Content Security Policy headers and HTTPS enforcement
 
 ## 🚀 Deployment
 
-### GitHub Pages
-1. Push code to GitHub repository
-2. Enable GitHub Pages in repository settings
-3. Select source branch (usually `main` or `master`)
-
-### Netlify
-1. Connect GitHub repository to Netlify
-2. Configure build settings
-3. Deploy automatically on push
-
-### Vercel
-1. Import GitHub repository to Vercel
-2. Configure project settings
-3. Deploy with automatic updates
+Deploy to GitHub Pages, Netlify, or Vercel by connecting your repository and configuring build settings.
 
 ## 📝 License
 
@@ -188,14 +90,3 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - **Location**: Madhubani, Bihar
 - **GitHub**: [y-rajeev](https://github.com/y-rajeev)
 - **Instagram**: [y__rajeev](https://www.instagram.com/y__rajeev)
-
-## 🙏 Acknowledgments
-
-- Font Awesome for icons
-- Google Fonts for typography
-- Formspree for contact form handling
-- GitHub Pages for hosting
-
----
-
-**Note**: This portfolio is continuously optimized for performance and user experience. Regular updates are made to maintain modern web standards and best practices.

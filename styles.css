@@ -413,7 +413,7 @@ section {
 /* Skills Section */
 .skills-content {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(3, 1fr);
     gap: 3rem;
 }
 
@@ -713,6 +713,11 @@ section {
     .hero {
         padding-bottom: 80px;
     }
+    
+    .skills-content {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
 }
 
 @media (max-width: 768px) {
@@ -754,6 +759,11 @@ section {
     
     .about-stats {
         justify-content: center;
+    }
+    
+    .skills-content {
+        grid-template-columns: 1fr;
+        gap: 2rem;
     }
     
     .contact-content {

@@ -1,18 +1,16 @@
 # Rajeev Yadav - Portfolio
 
-A modern, responsive personal portfolio website showcasing my skills, projects, and experience as a Full Stack Developer.
+A personal portfolio site: projects and skills as a developer and data analyst.
 
-## 🚀 Features
+## Features
 
-- Responsive design for all devices
-- Modern UI/UX with smooth animations
-- Dark mode toggle
-- Contact form integration
-- PWA support with offline functionality
+- Responsive layout
+- Contact form (Formspree)
+- Web app manifest for installable shortcut (optional)
 
-## 🛠️ Technologies
+## Stack
 
-HTML5, CSS3, JavaScript (ES6+), Service Worker, Google Fonts, Font Awesome
+HTML5, CSS3, JavaScript, Google Fonts, Font Awesome
 
 ## 📞 Contact
 

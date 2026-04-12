@@ -3,54 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rajeev Yadav - Portfolio</title>
-    <meta name="description" content="Rajeev Yadav is a passionate Full Stack Developer with expertise in React, Node.js, Python, and modern web technologies. View my portfolio of projects and get in touch.">
-    <meta name="keywords" content="Full Stack Developer, React, Node.js, Python, Web Development, Portfolio, Rajeev Yadav">
+    <title>Rajeev Yadav — Developer &amp; Data Analyst</title>
+    <meta name="description" content="Rajeev Yadav — developer and data analyst. Web apps, analytics, and open-source tools. View projects and get in touch.">
     <meta name="author" content="Rajeev Yadav">
-    
-    <!-- Performance optimizations -->
+
+    <!-- SEO & social -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preconnect" href="https://cdnjs.cloudflare.com">
     <link rel="preconnect" href="https://www.googletagmanager.com">
-    
-    <!-- Preload critical resources -->
-    <link rel="preload" href="styles.css" as="style">
     <link rel="preload" href="src/image.png" as="image">
     
-    <!-- Canonical URL -->
     <link rel="canonical" href="https://www.rajeevyadav.in/">
     
-    <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://www.rajeevyadav.in/">
-    <meta property="og:title" content="Rajeev Yadav - Full Stack Developer Portfolio">
-    <meta property="og:description" content="Passionate Full Stack Developer with expertise in modern web technologies. View my portfolio and get in touch.">
+    <meta property="og:title" content="Rajeev Yadav — Developer &amp; Data Analyst">
+    <meta property="og:description" content="Developer and data analyst — web apps, analytics, and open-source. Projects and contact.">
     <meta property="og:image" content="https://www.rajeevyadav.in/src/image.png">
+    <meta name="twitter:card" content="summary_large_image">
 
-    <!-- Twitter -->
-    <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://www.rajeevyadav.in/">
-    <meta property="twitter:title" content="Rajeev Yadav - Full Stack Developer Portfolio">
-    <meta property="twitter:description" content="Passionate Full Stack Developer with expertise in modern web technologies. View my portfolio and get in touch.">
-    <meta property="twitter:image" content="https://www.rajeevyadav.in/src/image.png">
-
-    <!-- Favicon -->
     <link rel="icon" type="image/png" sizes="32x32" href="src/icons8-portfolio-32.png">
-    
-    <!-- Web App Manifest -->
     <link rel="manifest" href="manifest.json">
-    
-    <!-- Optimized CSS loading -->
+
+    <!-- Assets -->
     <link rel="stylesheet" href="styles.css">
-    
-    <!-- Optimized font loading with display=swap -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    
-    <!-- Font Awesome with integrity and crossorigin -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer">
-    
-    <!-- Google Analytics with async loading -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer">
+
+    <!-- Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-GQ98K7R3FB"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
@@ -58,9 +39,34 @@
       gtag('js', new Date());
       gtag('config', 'G-GQ98K7R3FB');
     </script>
+
+    <!-- JSON-LD (Person) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Rajeev Yadav",
+      "url": "https://www.rajeevyadav.in/",
+      "image": "https://www.rajeevyadav.in/src/image.png",
+      "email": "mailto:mail.yrajeev@gmail.com",
+      "jobTitle": "Developer & Data Analyst",
+      "sameAs": [
+        "https://github.com/y-rajeev",
+        "https://www.linkedin.com/in/rajeevyadav",
+        "https://www.instagram.com/y__rajeev/"
+      ],
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Madhubani",
+        "addressRegion": "Bihar",
+        "addressCountry": "IN"
+      }
+    }
+    </script>
 </head>
 <body>
-    <!-- Navigation -->
+
+    <!-- Nav -->
     <nav class="navbar">
         <div class="nav-container">
             <div class="nav-logo">
@@ -91,15 +97,15 @@
         </div>
     </nav>
 
-    <!-- Home Section -->
+    <!-- Hero -->
     <section id="home" class="hero">
         <div class="hero-container">
             <div class="hero-content">
                 <h1 class="hero-title">Hi, I'm <span class="highlight">Rajeev Yadav</span></h1>
-                <h2 class="hero-subtitle">Full Stack Developer</h2>
+                <h2 class="hero-subtitle">Developer &amp; Data Analyst</h2>
                 <p class="hero-description">
-                    I build beautiful, functional, and user-centered digital experiences. 
-                    Passionate about clean code and innovative solutions.
+                    I build web apps, analytics, and internal tools—clean code, clear insights, and products that stay
+                    maintainable as they grow.
                 </p>
                 <div class="hero-buttons">
                     <a href="#projects" class="btn btn-primary">View My Work</a>
@@ -109,7 +115,7 @@
             <div class="hero-image">
                 <div class="profile-card">
                     <div class="profile-image">
-                        <img src="src/image.png" alt="Rajeev Yadav" style="width: 100%; height: 100%; object-fit: cover; border-radius: 50%; border: 4px solid #fff; box-shadow: 0 4px 24px rgba(0,0,0,0.15);" />
+                        <img src="src/image.png" alt="Rajeev Yadav" width="280" height="280" />
                     </div>
                 </div>
             </div>
@@ -121,7 +127,7 @@
         </div>
     </section>
 
-    <!-- About Section -->
+    <!-- About -->
     <section id="about" class="about">
         <div class="container">
             <h2 class="section-title">About Me</h2>
@@ -129,14 +135,16 @@
                 <div class="about-text">
                     <h3>Who I Am</h3>
                     <p>
-                        I'm a passionate Full Stack Developer with a love for creating innovative digital solutions. 
-                        With expertise in both frontend and backend technologies, I bring ideas to life through 
-                        clean, efficient code and intuitive user experiences.
+                        I'm a developer and a data analyst. I build web apps, dashboards, and internal tools, and I take
+                        data from messy inputs to reporting people can actually use. I care about clear UX, honest
+                        metrics, and code that stays easy to maintain.
                     </p>
                     <p>
-                        My journey in web development started with curiosity and has evolved into a career 
-                        filled with exciting projects and continuous learning. I believe in writing code that 
-                        not only works but is also maintainable and scalable.
+                        I also publish small tools and packages when they solve a real problem for someone else.
+                    </p>
+                    <p class="about-opensource">
+                        <i class="fas fa-code-branch" aria-hidden="true"></i>
+                        <span>Interested in contributing to open-source projects.</span>
                     </p>
                     <div class="about-stats">
                         <div class="stat">
@@ -147,10 +155,6 @@
                             <h4>20+</h4>
                             <p>Projects Completed</p>
                         </div>
-                        <!-- <div class="stat">
-                            <h4>20+</h4>
-                            <p>Happy Clients</p>
-                        </div> -->
                     </div>
                 </div>
                 <div class="about-image">
@@ -162,112 +166,65 @@
         </div>
     </section>
 
-    <!-- Skills Section -->
+    <!-- Skills -->
     <section id="skills" class="skills">
         <div class="container">
             <h2 class="section-title">Skills & Expertise</h2>
             <div class="skills-content">
                 <div class="skills-category">
                     <h3>Frontend Development</h3>
-                    <div class="skills-grid">
-                        <div class="skill-item">
-                            <i class="fab fa-html5"></i>
-                            <span>HTML</span>
-                            <div class="skill-bar">
-                                <div class="skill-progress" style="width: 95%"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <i class="fab fa-css3-alt"></i>
-                            <span>CSS</span>
-                            <div class="skill-bar">
-                                <div class="skill-progress" style="width: 90%"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <i class="fab fa-js-square"></i>
-                            <span>JavaScript</span>
-                            <div class="skill-bar">
-                                <div class="skill-progress" style="width: 85%"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <i class="fab fa-react"></i>
-                            <span>React</span>
-                            <div class="skill-bar">
-                                <div class="skill-progress" style="width: 80%"></div>
-                            </div>
-                        </div>
+                    <div class="skills-tags">
+                        <span class="skill-tag"><i class="fab fa-html5" aria-hidden="true"></i> HTML</span>
+                        <span class="skill-tag"><i class="fab fa-css3-alt" aria-hidden="true"></i> CSS</span>
+                        <span class="skill-tag"><i class="fab fa-js-square" aria-hidden="true"></i> JavaScript</span>
+                        <span class="skill-tag"><i class="fab fa-react" aria-hidden="true"></i> React</span>
                     </div>
                 </div>
                 <div class="skills-category">
                     <h3>Backend Development</h3>
-                    <div class="skills-grid">
-                        <div class="skill-item">
-                            <i class="fab fa-node-js"></i>
-                            <span>Node.js</span>
-                            <div class="skill-bar">
-                                <div class="skill-progress" style="width: 85%"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <i class="fab fa-python"></i>
-                            <span>Python</span>
-                            <div class="skill-bar">
-                                <div class="skill-progress" style="width: 90%"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <i class="fas fa-database"></i>
-                            <span>Supabase</span>
-                            <div class="skill-bar">
-                                <div class="skill-progress" style="width: 50%"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <i class="fab fa-aws"></i>
-                            <span>AWS</span>
-                            <div class="skill-bar">
-                                <div class="skill-progress" style="width: 50%"></div>
-                            </div>
-                        </div>
+                    <div class="skills-tags">
+                        <span class="skill-tag"><i class="fab fa-node-js" aria-hidden="true"></i> Node.js</span>
+                        <span class="skill-tag"><i class="fab fa-python" aria-hidden="true"></i> Python</span>
+                        <span class="skill-tag"><i class="fas fa-database" aria-hidden="true"></i> Supabase</span>
+                        <span class="skill-tag"><i class="fab fa-aws" aria-hidden="true"></i> AWS</span>
+                        <span class="skill-tag"><i class="fab fa-google" aria-hidden="true"></i> BigQuery</span>
                     </div>
                 </div>
                 <div class="skills-category">
-                    <h3>Server & Hosting</h3>
-                    <div class="skills-grid">
-                        <div class="skill-item">
-                            <i class="fas fa-server"></i>
-                            <span>Hetzner</span>
-                            <div class="skill-bar">
-                                <div class="skill-progress" style="width: 75%"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <i class="fas fa-cloud"></i>
-                            <span>Render</span>
-                            <div class="skill-bar">
-                                <div class="skill-progress" style="width: 80%"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <i class="fas fa-bolt"></i>
-                            <span>Vercel</span>
-                            <div class="skill-bar">
-                                <div class="skill-progress" style="width: 85%"></div>
-                            </div>
-                        </div>
+                    <h3>Server &amp; Hosting</h3>
+                    <div class="skills-tags">
+                        <span class="skill-tag"><i class="fas fa-server" aria-hidden="true"></i> Hetzner</span>
+                        <span class="skill-tag"><i class="fas fa-cloud" aria-hidden="true"></i> Render</span>
+                        <span class="skill-tag"><i class="fas fa-bolt" aria-hidden="true"></i> Vercel</span>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Projects Section -->
+    <!-- Projects -->
     <section id="projects" class="projects">
         <div class="container">
             <h2 class="section-title">My Projects</h2>
             <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image">
+                        <i class="fas fa-terminal"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3>erpclasp</h3>
+                        <p>A Python CLI and library inspired by clasp: pull, push, diff, status, and watch ERPNext Server Scripts between local project and ERPNext (Frappe) site over the REST API—Frappe Cloud or self-hosted. Published on PyPI.</p>
+                        <div class="project-tech">
+                            <span>Python</span>
+                            <span>CLI</span>
+                            <span>Frappe</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://pypi.org/project/erpclasp/" class="btn btn-small" target="_blank" rel="noopener noreferrer">PyPI</a>
+                            <a href="https://github.com/y-rajeev/erpclasp" class="btn btn-small btn-outline" target="_blank" rel="noopener noreferrer">GitHub</a>
+                        </div>
+                    </div>
+                </div>
                 <div class="project-card">
                     <div class="project-image">
                         <i class="fas fa-industry"></i>
@@ -281,8 +238,7 @@
                             <span>Supabase</span>
                         </div>
                         <div class="project-links">
-                            <a href="#" class="btn btn-small" target="_blank">Live Demo</a>
-                            <a href="https://github.com/y-rajeev/QueryOS.git" target="_blank" class="btn btn-small btn-outline">GitHub</a>
+                            <a href="https://github.com/y-rajeev/QueryOS.git" target="_blank" rel="noopener noreferrer" class="btn btn-small">GitHub</a>
                         </div>
                     </div>
                 </div>
@@ -299,8 +255,7 @@
                             <span>Google Sheets</span> 
                         </div>
                         <div class="project-links">
-                            <a href="#" class="btn btn-small" target="_blank">Live Demo</a>
-                            <a href="https://github.com/y-rajeev/SalaryCalc.git" class="btn btn-small btn-outline" target="_blank">GitHub</a>
+                            <a href="https://github.com/y-rajeev/SalaryCalc.git" class="btn btn-small" target="_blank" rel="noopener noreferrer">GitHub</a>
                         </div>
                     </div>
                 </div>
@@ -317,8 +272,7 @@
                             <span>Vite</span>
                         </div>
                         <div class="project-links">
-                            <a href="#" class="btn btn-small" target="_blank">Live Demo</a>
-                            <a href="https://github.com/y-rajeev/task_manager.git" class="btn btn-small btn-outline" target="_blank">GitHub</a>
+                            <a href="https://github.com/y-rajeev/task_manager.git" class="btn btn-small" target="_blank" rel="noopener noreferrer">GitHub</a>
                         </div>
                     </div>
                 </div>
@@ -335,8 +289,7 @@
                             <span>Android Studio</span>
                         </div>
                         <div class="project-links">
-                            <a href="#" class="btn btn-small" target="_blank">Live Demo</a>
-                            <a href="https://github.com/suraaj-rajeev/HQ-Mobile.git" class="btn btn-small btn-outline" target="_blank">GitHub</a>
+                            <a href="https://github.com/suraaj-rajeev/HQ-Mobile.git" class="btn btn-small" target="_blank" rel="noopener noreferrer">GitHub</a>
                         </div>
                     </div>
                 </div>
@@ -353,8 +306,7 @@
                             <span>Excel</span>
                         </div>
                         <div class="project-links">
-                            <a href="#" class="btn btn-small" target="_blank">Live Demo</a>
-                            <a href="https://github.com/y-rajeev/attendify.git" class="btn btn-small btn-outline" target="_blank">GitHub</a>
+                            <a href="https://github.com/y-rajeev/attendify.git" class="btn btn-small" target="_blank" rel="noopener noreferrer">GitHub</a>
                         </div>
                     </div>
                 </div>
@@ -362,7 +314,7 @@
         </div>
     </section>
 
-    <!-- Contact Section -->
+    <!-- Contact -->
     <section id="contact" class="contact">
         <div class="container">
             <h2 class="section-title">Get In Touch</h2>
@@ -375,14 +327,14 @@
                             <i class="fas fa-envelope"></i>
                             <div>
                                 <h4>Email</h4>
-                                <p>mail.yrajeev@gmail.com</p>
+                                <p><a href="mailto:mail.yrajeev@gmail.com">mail.yrajeev@gmail.com</a></p>
                             </div>
                         </div>
                         <div class="contact-item">
                             <i class="fas fa-phone"></i>
                             <div>
                                 <h4>Phone</h4>
-                                <p>+91 9135661641</p>
+                                <p><a href="tel:+919135661641">+91 9135661641</a></p>
                             </div>
                         </div>
                         <div class="contact-item">
@@ -392,6 +344,7 @@
                                 <p>Madhubani, Bihar</p>
                             </div>
                         </div>
+                        <!-- Résumé: add a contact-item here linking to resume.pdf in site root when ready -->
                     </div>
                 </div>
                 <div class="contact-form">
@@ -436,38 +389,18 @@
                 <div class="footer-section">
                     <h4>Connect</h4>
                     <div class="social-links">
-                        <a href="#" aria-label="LinkedIn" target="_blank"><i class="fab fa-linkedin"></i></a>
-                        <a href="https://github.com/y-rajeev" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
-                        <a href="#" aria-label="Twitter" target="_blank"><i class="fab fa-twitter"></i></a>
-                        <a href="https://www.instagram.com/y__rajeev?igsh=MWVtd2tqMTRvZXhmeA==" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-                        <a href="#" aria-label="Facebook" target="_blank"><i class="fab fa-facebook"></i></a>
+                        <a href="https://www.linkedin.com/in/rajeevyadav" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://github.com/y-rajeev" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                        <a href="https://www.instagram.com/y__rajeev/" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
                     </div>
                 </div>
             </div>
             <div class="footer-bottom">
                 <p>&copy; <span id="year"></span> Rajeev Yadav. All rights reserved.</p>
-                <script>
-                    document.getElementById("year").textContent = new Date().getFullYear();
-                </script>
             </div>
         </div>
     </footer>
 
     <script src="script.js" defer></script>
-    
-    <!-- Service Worker Registration -->
-    <script>
-        if ('serviceWorker' in navigator) {
-            window.addEventListener('load', () => {
-                navigator.serviceWorker.register('sw.js')
-                    .then(registration => {
-                        console.log('SW registered: ', registration);
-                    })
-                    .catch(registrationError => {
-                        console.log('SW registration failed: ', registrationError);
-                    });
-            });
-        }
-    </script>
 </body>
 </html> 
